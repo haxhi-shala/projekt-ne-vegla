@@ -64,7 +64,46 @@ for(int i = 0; i < stdentet.size(); i++){
 cout << "Studenti me ket ID nuk egziston. \n";
 }
 
+int main() {
+    vector<Student> studentet;
+    int zgjedhja;
 
+    do {
+        cout << "\n====== MENU ======\n";
+        cout << "1. Shto student\n";
+        cout << "2. Shfaq studentet\n";
+        cout << "3. Kerko sipas emrit\n";
+        cout << "4. Fshi student\n";
+        cout << "0. Dil\n";
+        cout << "Zgjedhja: ";
+        cin >> zgjedhja;
+
+        if (zgjedhja == 1) {
+            Student s;
+            cout << "Emri: ";
+            cin >> s.emri;
+            cout << "Mbiemri: ";
+            cin >> s.mbiemri;
+            cout << "ID: ";
+            cin >> s.id;
+            cout << "Nota: ";
+            cin >> s.nota;
+            studentet.push_back(s);
+        }
+        else if (zgjedhja == 2) {
+            shfaqStudentet(studentet);
+        }
+        else if (zgjedhja == 3) {
+            kerkoSipasEmrit(studentet);
+        }
+        else if (zgjedhja == 4) {
+            fshiStudent(studentet);
+        }
+        
+    } while (zgjedhja != 0);
+
+    return 0;
+}
 
 
 
