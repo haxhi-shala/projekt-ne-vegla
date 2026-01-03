@@ -48,6 +48,21 @@ void kerkoSipasEmrit(const vector<Student>& studentet) {
         cout << " Nuk u gjet asnje student me kete emer.\n";
     }
 }
+ void fshiStudent(vector<Student>^&studentet){
+int id;
+cout << "Shkruaj ID e studentit per fshirje: ";
+cin >> id;
+
+for(int i = 0; i < stdentet.size(); i++){
+	if(studentet[i].id == id){
+		studentet.erase(studentet.begin() + i);
+		cout << "Studenti u fshi me sukses. \n";
+	return;
+	}
+}
+
+cout << "Studenti me ket ID nuk egziston. \n";
+}
 
 
 
