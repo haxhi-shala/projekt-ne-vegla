@@ -5,7 +5,7 @@
 Ky projekt është një program i thjeshtë në C++ për menaxhimin e studentëve. Ai lejon regjistrimin, shfaqjen, kërkimin dhe fshirjen e studentëve nga një listë. Projektuar për përdorim edukativ dhe për mësim mbi strukturat dhe funksionet në C++.
 
 ## Karakteristikat Kryesore
-- Ruajtja e të dhënave të studentëve në një `vector` të strukturave `Student`.
+- Ruajtja e të dhënave të studentëve në një 'vector' të strukturave 'Student' .
 - Shfaqja e listës së studentëve
 - Kërkimi i studentëve sipas emrit.
 - Fshirja e studentëve sipas ID-së.
