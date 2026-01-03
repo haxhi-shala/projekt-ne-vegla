@@ -12,8 +12,8 @@ Ky projekt është një program i thjeshtë në C++ për menaxhimin e studentëv
 - Kontroll i thjeshtë për raste kur lista është bosh ose studentët nuk gjenden.
 
 ## Struktura e Projektit
-- `main.cpp` – File kryesor që përmban logjikën e programit.
+- 'main.cpp' – File kryesor që përmban logjikën e programit.
 - Funksione të ndara për shfaqje, kërkim dhe fshirje të studentëve:
-  - `shfaqStudentet` – shfaq të gjithë studentët e regjistruar.
-  - `kerkoSipasEmrit` – kërkon studentin me emrin e dhënë.
-  - `fshiStudent` – fshin studentin me ID të specifikuar.
+  - 'shfaqStudentet' – shfaq të gjithë studentët e regjistruar.
+  - 'kerkoSipasEmrit' – kërkon studentin me emrin e dhënë.
+  - 'fshiStudent' – fshin studentin me ID të specifikuar.
