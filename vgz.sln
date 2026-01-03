@@ -32,7 +32,7 @@ void kerkoSipasEmrit(const vector<Student>& studentet) {
     bool uGjet = false;
     for (const auto& s : studentet) {
         if (s.emri == emriKerkim) {
-            cout << "\n📢 Studenti u gjet:\n";
+            cout << "\n Studenti u gjet:\n";
             cout << "Emri: " << s.emri
                 << ", Mbiemri: " << s.mbiemri
                 << ", ID: " << s.id
@@ -42,7 +42,8 @@ void kerkoSipasEmrit(const vector<Student>& studentet) {
     }
 
     if (!uGjet) {
-        cout << "❌ Nuk u gjet asnje student me kete emer.\n";
+        cout << " Nuk u gjet asnje student me kete emer.\n";
     }
 }
+
 
