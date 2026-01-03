@@ -8,3 +8,19 @@ struct Student {
     int id;
     float nota;
 };
+void shfaqStudentet(const vector<Student>& studentet) {
+	if (studentet.empty()) {
+		cout << "Nuk ka studente te regjistruar.\n";
+
+		return;
+	}
+
+	cout << "\n---Lista e Studenteve---\n";
+	for (const auto& s : studentet) {
+		cout << "Emri: " << s.emri
+			<< ", Mbiemri: " << s.mbiemri
+			<< ", ID: " << s.id
+			<< ", Nota: " << s.nota << endl;
+	}
+}
+
