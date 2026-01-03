@@ -24,3 +24,25 @@ void shfaqStudentet(const vector<Student>& studentet) {
 	}
 }
 
+void kerkoSipasEmrit(const vector<Student>& studentet) {
+    string emriKerkim;
+    cout << "Shkruaj emrin e studentit: ";
+    cin >> emriKerkim;
+
+    bool uGjet = false;
+    for (const auto& s : studentet) {
+        if (s.emri == emriKerkim) {
+            cout << "\n📢 Studenti u gjet:\n";
+            cout << "Emri: " << s.emri
+                << ", Mbiemri: " << s.mbiemri
+                << ", ID: " << s.id
+                << ", Nota: " << s.nota << endl;
+            uGjet = true;
+        }
+    }
+
+    if (!uGjet) {
+        cout << "❌ Nuk u gjet asnje student me kete emer.\n";
+    }
+}
+
